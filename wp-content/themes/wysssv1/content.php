@@ -8,31 +8,21 @@
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php wysssv1_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+			</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
-			/* translators: %s: Name of current post */
-			the_content( sprintf(
-				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'wysssv1' ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-		?>
-
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'wysssv1' ),
-				'after'  => '</div>',
-			) );
-		?>
+		<h2>why should I stop saying "<?php the_title(); ?>"?</h2>
+		<?php the_content(); ?>
+		
+		
+		<!-- <h2>who was the last idiot to say "<?php the_title(); ?>"?</h2> -->
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php wysssv1_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+	</footer><!-- .entry-footer --></article><!-- #post-## -->
+
+<?php
+/**
+ * @package wysssv1
+ */
+?>
