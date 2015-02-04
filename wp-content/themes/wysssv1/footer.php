@@ -12,6 +12,11 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', 'wysssv1' ); ?></button>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' , 'after' => '<li>*</li>') ); ?>
+		</nav><!-- #site-navigation -->
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
