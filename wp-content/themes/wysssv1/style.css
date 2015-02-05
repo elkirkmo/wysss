@@ -792,6 +792,30 @@ margin: 0 auto;
 	#site-navigation li:first-of-type {
 		margin-left: 0;
 	}
+
+
+.twitter_box img {
+	float: left;
+	margin-right: 15px;
+	}
+
+.twitter_box ul {
+	float: left;
+	display: inline-block;
+	width: 90%;
+	margin: 0;
+	padding: 0;
+}
+
+.twitter_box li {
+	display: inline-block;
+}
+
+.twitter_box p {
+	float: left;
+	width: 90%;
+	margin-top: 5px;
+}
 	
 
 /*--------------------------------------------------------------
