@@ -14,6 +14,9 @@
 		<h2>why should I stop saying "<?php the_title(); ?>"?</h2>
 		<?php the_content(); ?>
 		
+		<h2>what should I say instead of "<?php the_title(); ?>"?</h2>
+		<?php the_field('say_instead_body'); ?>
+		
 		
 		<h2>who was the last idiot to say "<?php the_title(); ?>"?</h2>
 		<?php
